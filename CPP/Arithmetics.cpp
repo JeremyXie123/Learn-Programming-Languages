@@ -2,7 +2,6 @@
 using namespace std; 
 
 int main() {
-    // Type Name = Value
     int a = 1;
     int b = 4;
     double c = 2.0;
