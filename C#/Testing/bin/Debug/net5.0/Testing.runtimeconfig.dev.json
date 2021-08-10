@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\bloor\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\bloor\\.nuget\\packages"
+    ]
+  }
+}
