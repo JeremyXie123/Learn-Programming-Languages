@@ -1,0 +1,57 @@
+% Preamble stuff
+\documentclass{article} % This can be used to specify the template you will use for your document
+\setlength{\parskip}{1em} % Sets the spacing between paragraphs
+
+\usepackage[utf8]{inputenc} % Input encoding set to UTF-8 (allows emojis and stuff) (careful what compiler you use though)
+\usepackage[margin=1.5in]{geometry} % Use this to specify margins
+\usepackage{amsmath,amssymb} % American Math Society, allows for symbols, improves existing macros and adds for environments such as align
+\usepackage{graphicx} % Allows us to embed images
+\usepackage{indentfirst} % Indents the first paragraph
+
+\title{Test}
+\author{John Doe}
+\date{August 2021}
+
+% Document stuff
+\begin{document} % Indicates the beginning of a document
+
+\maketitle{Yeah}
+
+\section{Introduction}
+This document will be used to demonstrate various base functions available in latex. 
+
+\section{Text Formatting}
+\textit{This is italicized text}
+\textbf{This is bolded text}
+\underline{This is underlined text}
+
+\section{Math Formatting}
+Display Style Math Example:
+\[f(x)=(x+2)^2-9\] % Functions must be encased between \[\]
+
+Align * environment variation: % Must begin and end an align* environment, and use ampersands where you want equations to be aligned. (note that removing the star makes the equations numbered)
+\begin{align*}
+f(x)&=(x+2)^2-9\\
+f(1)&=(1+2)^2-9\\ 
+&=9-9\\
+&=0
+\end{align*}
+\indent Numbered align* with multiple equations per line:
+\begin{align}
+x+2y&=8 & x-y&=-1\\
+x+2y&=8 & 2x-2y&=-2
+\end{align}
+\begin{align*}
+x+2y&=8\\
+2x-2y&=-2\\
+3x&=6\\
+x&=2\\
+\end{align*}
+
+Inline equations:
+
+Example function: \(f(x)=x^2+2x+2\) has imaginary roots. % Generally inline equations take up less vertical space
+
+This is a function of \(x\). % Use \(\) to denote an equation; may be used to italicize a variable letter
+
+\end{document} % Indicates the end of a document
